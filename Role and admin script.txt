@@ -1,0 +1,21 @@
+INSERT INTO public.role_tbl(
+	role_id, role_name)
+	VALUES (1, 'Admin');
+INSERT INTO public.role_tbl(
+	role_id, role_name)
+	VALUES (2, 'Physician');
+INSERT INTO public.role_tbl(
+	role_id, role_name)
+	VALUES (3, 'Nurse');
+INSERT INTO public.role_tbl(
+	role_id, role_name)
+	VALUES (4, 'Patient');
+
+
+INSERT INTO public.user_tbl(
+	id, date_of_birth, date_of_joining, email_id, employee_id, first_name, last_name, status, title, login_login_id)
+	VALUES (1, '10/04/1985' ,'1/10/2018','admin123@gmail.com', 'AD001', 'Tony', 'Stark', true, 'Mr.', 1);
+
+INSERT INTO public.login_tbl(
+	login_id, default_password, password, role_id, token, username)
+	VALUES (1, null, '$2a$12$Y6gowfObXTAaw2JAbbsgnu/AingpYDV4jHPSFoQ/Lt7b1Db4wSNRq', 1, null, 'admin123@gmail.com');
